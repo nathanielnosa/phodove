@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+:root{
+    --main-color:#025d02 !important;
+    --secondary-color:#e6f48d !important;
+}
+
+.navbar{
+    background: #000;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.navbar-brand span{
+    color: var(--main-color);
+}
+.navbar-brand span i{
+    color: white;
+}
+.navbar .nav-link{
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+.navbar .nav-link.active{
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+.navbar .nav-link:hover{
+    color: var(--secondary-color);
+    background: var(--main-color);
+}
+/* carousel */
+.carousel-inner img{
+    height: 95vh;
+}
+/* intro */
+.intro{
+    color: var(--secondary-color);
+    text-shadow:.4rem 0 .4rem #000;
+}
+/* main body */
+#main .card {
+  background:transparent;
+  height: 70vh;
+  border: .1rem solid var(--secondary-color);
+  perspective: 1000px; 
+}
+
+#main .card-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#main .card:hover .card-box-inner {
+  transform: rotateY(180deg);
+}
+
+#main .flip-box-front, #main .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+#main .flip-box-back {
+    transform: rotateY(180deg);
+  }
+/* overview style */
+/* overview style */
+#overview-banner{
+    background-image: url(/assets/img/overview.svg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* swipper */
+.swiper-button-next,.swiper-button-prev{
+    color: var(--main-color);
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: var(--main-color);
+}
+
+
