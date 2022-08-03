@@ -92,3 +92,17 @@
 }
 
 
+@media(max-width:520px) {
+    /* carousel */
+.carousel-inner img{
+    height: 55vh;
+}
+/* main body */
+#main .card {
+    background:transparent;
+    height: 80vh;
+    border: .1rem solid var(--secondary-color);
+    perspective: 1000px; 
+  }
+  
+}
